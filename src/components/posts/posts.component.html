@@ -1,0 +1,23 @@
+<div
+    class="table-responsive"
+>
+    <table
+        class="table table-primary"
+    >
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">TİTLE</th>
+                <th scope="col">BODY</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let post of posts">
+                <td>{{post.id}}</td>
+                <td>{{post.title}}</td>
+                <td>{{post.body}}</td>
+            </tr>
+          
+        </tbody>
+    </table>
+</div>
